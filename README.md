@@ -1,118 +1,31 @@
-﻿
-# 🕵️ Deepfake Detection using CNN
+Activate  virtual environment:
 
-This project detects deepfake images using a Convolutional Neural Network (CNN). It includes:
-- Model training using PyTorch
-- Image classification (Real vs Fake)
-- Flask web application for local testing
-
----
-
-## 📂 Project Structure
-
-```
-
-Deepfake-Detection/
-│
-├── app.py                # Flask app
-├── train.py              # Training script
-├── predict.py            # Prediction script
-├── models/               # Saved models
-├── dataset/
-│   ├── real/             # Real images
-│   └── fake/             # Fake images
-
-├── requirements.txt      # Dependencies
-└── README.md             # Documentation
-
-````
-
----
-
-## ✅ Features
-✔ Train CNN on real and fake images  
-✔ Predict using single image or folder  
-✔ Flask web app for local deployment  
-✔ Displays prediction confidence  
-
----
-
-## 🔧 Installation
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/your-username/deepfake-detection.git
-cd deepfake-detection
-````
-
-### 2. Create Virtual Environment
-
-```bash
-python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate # Linux/Mac
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 📥 Dataset
-
-Prepare your dataset with:
-
-```
-dataset/
-├── real/   (e.g.,  real images)
-└── fake/   (e.g.,  fake images)
-```
+command:	python -m venv venv
+		venv\Scripts\activate
 
 
----
 
-## 🏋️ Training the Model
+2.Train model:
 
-```bash
-python train.py
-```
+command:  	python train.py
 
-The model will be saved in `models/cnn_model.pth`.
 
----
+3.Run prediction script:
 
-## 🔍 Predict on Single Image
+command: 	python predict.py
 
-Edit `predict.py` or just run:
 
-```bash
-python predict.py
-```
+4.Run Flask app:
 
-This will pick a random image from `dataset/real/` and predict.
+command:	python app/app.py
 
----
 
-## 🌐 Run Flask App
 
-```bash
-python app.py
-```
+5. click or Open in browser:
+Link:		http://127.0.0.1:5000/
 
-Then open **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)** in your browser.
 
----
 
-## 📊 Future Improvements
-
-* Use **pre-trained models (ResNet, EfficientNet)**
-* Add **video deepfake detection**
-* Deploy on **Docker or cloud**
-
----
 
 
 
