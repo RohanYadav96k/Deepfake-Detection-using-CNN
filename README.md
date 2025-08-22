@@ -21,8 +21,9 @@ command:	python app/app.py
 
 
 
-5. click or Open in browser:
+5. click & Open in browser:
 Link:		http://127.0.0.1:5000/
+
 
 
 
